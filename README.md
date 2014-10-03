@@ -1,3 +1,5 @@
+Copyright (c) 2014 Ray NI. All rights reserved.
+
 This program is free software: you can redistribute it and/or modify it under the terms you can find below.
 
 You can use this software for free only for no-profit projects. If you'd like to use this software in a commercial project you may contact the author (RayNI: wndproc@gmail.com) of the software and ask for his permission and fulfill his conditions.
