@@ -1,15 +1,34 @@
-Copyright (c) 2014 Ray NI. All rights reserved.
+# A Chinese Chess web appliation.  
 
-This program is free software: you can redistribute it and/or modify it under the terms you can find below.
+## Here is how it works:
 
-You can use this software for free only for no-profit projects. If you'd like to use this software in a commercial project you may contact the author (RayNI: wndproc@gmail.com) of the software and ask for his permission and fulfill his conditions.
+At the backend, node.js (or io.js) is used, node will load chess engine as child process. The node communicates with chess engine by UCI [Universal Chess Interface](http://en.wikipedia.org/wiki/Universal_Chess_Interface), the way that basically all chess UIs talk with chess engine. UCI is asychronous interface, so though the chess engine is CPU intensive, it can work with node perfectly. UCCI targets for Chinese chess, it is a variation of UCI with very little difference.  
 
-You can edit and/or redistribute this software only providing a copy of this license with it.
+The UI part, it's just a Single Page Application powered by Express, the web chess board is built with jQuery. 
 
-You cannot sell this software, any change to the software must be published under the same license of the original software, in case you don't want to publish your changes you can use a different license. It will be valid only if your changes are not published but keep private for personal projects or closed-source projects, in case you want to publish your changes you must switch again to the original license provided with the software.
+UI talks with server via socket.io
 
-This software can be sold if used inside a software which uses it as dependency, in any case, this license must be included in the software.
+## How to get it running:
+- clone the rep
+- make sure node module for Express are ready
+````
+npm install
+````
+- install socket.io
+````
+npm install socket.io
+````
+- run server
+````
+node app
+````
+- open browser
+````
+http://localhost:3000/index.html
+````
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+Enjoy!
 
-This license could be edited in any moment without alert.
+MIT
+
+
