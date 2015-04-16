@@ -1,4 +1,4 @@
-# A Chinese Chess web appliation.  
+# A Chinese Chess web application.  
 
 ## Here is how it works:
 
