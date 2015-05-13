@@ -14,10 +14,6 @@ UI talks with server via socket.io
 ````
 npm install
 ````
-- install socket.io
-````
-npm install socket.io
-````
 - run server
 ````
 node app
