@@ -25,6 +25,7 @@ http://localhost:3000/index.html
 
 Enjoy!
 
-MIT
+## License
+MIT.
 
 
